@@ -1,6 +1,6 @@
-# Tailwind Manage Landing Page
+# Pa Market Website
 
-This is the project from my 2022 Tailwind Crash Course on YouTube.
+This is the web project of Pa Market.
 
 ![Alt text](../Pa%20Market/dist/img/screen.png?raw=true)
 
@@ -12,7 +12,7 @@ Install dependencies (Tailwind)
 npm install
 ```
 
-Run the Tailwind CLI to compile the **input.css** during development. The output file is **css/main.css**
+Run the Tailwind CLI to compile the input css file named **/src/styles.css** during development. The output css file is **/dist/css/main.css**
 
 ```
 npm run watch
