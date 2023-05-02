@@ -9,7 +9,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="relative container mx-auto p-6">
+    <nav class="sticky bg-white top-0 z-10 container mx-auto p-6 pb-4 bg-transparent" id="navbar">
       <!-- Flex container -->
       <div class="flex items-center justify-between">
         <!-- Logo -->
@@ -21,27 +21,17 @@
         <div class="hidden space-x-6 md:flex">
           <!-- Search Bar -->
         
-          <a href="#" class="hover:text-darkGrayishBlue">Home</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Services</a>
-          <a href="#" class="hover:text-darkGrayishBlue">About</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
-          <div class="w-1/2 max-w-sm mx-auto">
-            <div class="relative flex items-center bg-gray-100 rounded-full shadow-xl">
-              <input type="text" class="w-1/2 px-4 py-1 pr-10 leading-none rounded-full bg-gray-100 focus:outline-none" placeholder="Search">
-              <div class="absolute right-0 mr-2">
-                <svg class="w-6 h-6 text-gray-400" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                  <path d="M22 22l-6-6"></path>
-                  <path d="M10 7a7 7 0 1 1 0 10 7 7 0 0 1 0-10z"></path>
-                </svg>
-              </div>
-            </div>
-          </div>
+          <a href="#" class="font-quicksand font-medium hover:text-darkGrayishBlue">Home</a>
+          <a href="#" class="font-quicksand font-medium hover:text-darkGrayishBlue">Services</a>
+          <a href="#" class="font-quicksand font-medium hover:text-darkGrayishBlue">About</a>
+          <a href="#" class="font-quicksand font-medium hover:text-darkGrayishBlue">Contact</a>
+          
         </div>
         
         <!-- Button -->
         <a
           href="#"
-          class="hidden p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
+          class="hidden font-quicksand font-medium p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
           >Subscribe</a
         >
 
@@ -62,11 +52,10 @@
           id="menu"
           class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
         >
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-          <a href="#">Community</a>
+          <a href="#" class="font-quicksand font-medium">Home</a>
+          <a href="#" class="font-quicksand font-medium">Services</a>
+          <a href="#" class="font-quicksand font-medium">About</a>
+          <a href="#" class="font-quicksand font-medium">Contact</a>
         </div>
       </div>
     </nav>
@@ -80,18 +69,18 @@
         <!-- Left item -->
         <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
           <h1
-            class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left"
+            class="max-w-md text-4xl font-quicksand font-bold text-center md:text-5xl md:text-left"
           >
             Bring everyone together to build better products
           </h1>
-          <p class="max-w-sm pt-2 text-center text-white md:text-left">
+          <p class="max-w-sm pt-2 font-quicksand font-medium text-center text-black md:text-left">
             Manage makes it simple for software teams to plan day-to-day tasks
             while keeping the larger team goals in view.
           </p>
           <div class="flex justify-center md:justify-start">
             <a
               href="#"
-              class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+              class="p-3 px-6 pt-2 font-quicksand font-medium text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
               >Get Started</a
             >
           </div>
@@ -111,10 +100,10 @@
       >
         <!-- What's Different -->
         <div class="flex flex-col space-y-12 md:w-1/2">
-          <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
+          <h2 class="max-w-md text-4xl font-quicksand font-bold text-center md:text-left">
             What's different about Manage?
           </h2>
-          <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+          <p class="max-w-sm font-quicksand font-medium text-center text-black md:text-left">
             Manage provides all the functionality your team needs, without the
             complexity. Our software is tailor-made for modern digital product
             teams.

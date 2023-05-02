@@ -2,11 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
 body {
   background-image: url('../img/bg-tablet-pattern.svg');
   background-repeat: no-repeat;
   background-size: 800px;
-  background-position: 5% 0%;
+  background-position: 14% 0%;
 }
 
 #cta {

@@ -7,6 +7,13 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
+    fontFamily: {
+      'arvo': ['Arvo', 'serif'],
+      'lato': ['Lato', 'sans-serif'],
+      'noto': ['Noto Serif', 'serif'],
+      'quicksand': ['Quicksand', 'sans-serif'],
+      'arvo': ['Arvo', 'serif'],
+    },
     extend: {
       colors: {
         brightRed: 'hsl(12, 88%, 59%)',
