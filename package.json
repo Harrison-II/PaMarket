@@ -1,16 +1,16 @@
 {
-  "name": "tailwind-manage-landing",
+  "name": "Pa-Market",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./input.css -o ./css/main.css",
-    "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch"
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/css/main.css",
+    "watch": "tailwindcss -i ./src/styles.css -o ./dist/css/main.css --watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ndeji Chiputa",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.0.23"
+    "tailwindcss": "^3.3.2"
   }
 }

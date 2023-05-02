@@ -2,7 +2,7 @@
 
 This is the project from my 2022 Tailwind Crash Course on YouTube.
 
-![Alt text](/img/screen.png?raw=true)
+![Alt text](../Pa%20Market/dist/img/screen.png?raw=true)
 
 # Usage
 
