@@ -9,56 +9,59 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="sticky bg-white top-0 z-10 container mx-auto p-6 pb-4 bg-transparent" id="navbar">
-      <!-- Flex container -->
-      <div class="flex items-center justify-between">
-        <!-- Logo -->
-        <div class="pt-2">
-          <img src="../img/logo.svg" alt="" />
-        </div>
-
-        <!-- Menu Items -->
-        <div class="hidden space-x-6 md:flex">
-          <!-- Search Bar -->
-        
-          <a href="#" class="font-quicksand font-medium hover:text-darkGrayishBlue">Home</a>
-          <a href="#" class="font-quicksand font-medium hover:text-darkGrayishBlue">Services</a>
-          <a href="#" class="font-quicksand font-medium hover:text-darkGrayishBlue">About</a>
-          <a href="#" class="font-quicksand font-medium hover:text-darkGrayishBlue">Contact</a>
+    <div class="sticky top-0 w-full z-10 shadow-sm bg-opacity-80 bg-clip-padding blur-backdrop-filter">
+      <nav class="sticky top-0 container mx-auto z-10 p-3">
+        <!-- Flex container -->
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <div class="pt-2">
+            <img src="../img/logo.svg" alt="" />
+          </div>
+  
+          <!-- Menu Items -->
+          <div class="hidden space-x-6 md:flex">
+            <!-- Search Bar -->
           
+            <a href="#" class="font-quicksand font-semibold hover:text-darkGrayishBlue">Home</a>
+            <a href="#" class="font-quicksand font-semibold hover:text-darkGrayishBlue">Services</a>
+            <a href="#" class="font-quicksand font-semibold hover:text-darkGrayishBlue">About</a>
+            <a href="#" class="font-quicksand font-semibold hover:text-darkGrayishBlue">Contact</a>
+            
+          </div>
+          
+          <!-- Button -->
+          <a
+            href="#"
+            class="hidden font-quicksand font-medium p-3 px-6 pt-2 border-b-2 border-t border-green-700 text-green-700 bg-white rounded-full baseline hover:text-white hover:bg-green-700 md:block"
+            >Subscribe</a
+          >
+  
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
         </div>
-        
-        <!-- Button -->
-        <a
-          href="#"
-          class="hidden font-quicksand font-medium p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight md:block"
-          >Subscribe</a
-        >
-
-        <!-- Hamburger Icon -->
-        <button
-          id="menu-btn"
-          class="block hamburger md:hidden focus:outline-none"
-        >
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
-        </button>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div class="md:hidden">
-        <div
-          id="menu"
-          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-        >
-          <a href="#" class="font-quicksand font-medium">Home</a>
-          <a href="#" class="font-quicksand font-medium">Services</a>
-          <a href="#" class="font-quicksand font-medium">About</a>
-          <a href="#" class="font-quicksand font-medium">Contact</a>
+  
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <a href="#" class="font-quicksand font-medium">Home</a>
+            <a href="#" class="font-quicksand font-medium">Services</a>
+            <a href="#" class="font-quicksand font-medium">About</a>
+            <a href="#" class="font-quicksand font-medium">Contact</a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
+    
 
     <!-- Hero Section -->
     <section id="hero">
@@ -80,7 +83,7 @@
           <div class="flex justify-center md:justify-start">
             <a
               href="#"
-              class="p-3 px-6 pt-2 font-quicksand font-medium text-white bg-brightRed rounded-full baseline hover:bg-brightRedLight"
+              class="p-3 px-6 pt-2 font-quicksand font-medium border-b-2 border-green-700 text-green-700 bg-white rounded-full baseline hover:text-white hover:bg-green-700"
               >Get Started</a
             >
           </div>
@@ -267,22 +270,22 @@
     </section>
 
     <!-- CTA Section -->
-    <section id="cta" class="bg-brightRed">
+    <section id="cta" class="lg:pt-52 sm:pt-0">
       <!-- Flex Container -->
       <div
-        class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
+        class="container flex flex-col content-end items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row md:space-y-0"
       >
         <!-- Heading -->
         <h2
-          class="text-5xl font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left"
+          class="text-5xl font-quicksand font-bold text-center text-white md:text-4xl md:max-w-xl md:text-left"
         >
           Simplify how your team works today
         </h2>
         <!-- Button -->
-        <div>
+        <div class="pt-8">
           <a
             href="#"
-            class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl baseline hover:bg-gray-900"
+            class="p-3 px-6 pt-2 font-quicksand font-normal text-green-700 bg-white rounded-full border border-green-700 shadow-2xl baseline hover:bg-green-700 hover:text-white"
             >Get Started</a
           >
         </div>

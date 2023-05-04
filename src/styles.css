@@ -12,7 +12,9 @@ body {
 }
 
 #cta {
-  background-image: url('../img/bg-simplify-section-desktop.svg');
+  height: 400px;
+  background-image: url('../img/farmer_on_phone_copy.jpg');
+  background-size: 1440px;
   background-repeat: no-repeat;
 }
 
@@ -72,4 +74,14 @@ body {
 
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.backdrop-filter {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.blur-backdrop-filter {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
