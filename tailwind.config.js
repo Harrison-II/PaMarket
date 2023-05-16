@@ -11,13 +11,13 @@ module.exports = {
       xl: '1440px',
     },
     fontFamily: {
-      'arvo': ['Arvo', 'serif'],
-      'lato': ['Lato', 'sans-serif'],
-      'noto': ['Noto Serif', 'serif'],
-      'quicksand': ['Quicksand', 'sans-serif'],
-      'arvo': ['Arvo', 'serif'],
-      'inter': ['Inter', 'sans-serif'],
-      'nunito': ['Nunito Sans', 'sans-serif'],
+      arvo: ['Arvo', 'serif'],
+      lato: ['Lato', 'sans-serif'],
+      noto: ['Noto Serif', 'serif'],
+      quicksand: ['Quicksand', 'sans-serif'],
+      inter: ['Inter', 'sans-serif'],
+      nunito: ['Nunito Sans', 'sans-serif'],
+      varela: ['Varela Round', 'sans-serif']
     },
     extend: {
       colors: {

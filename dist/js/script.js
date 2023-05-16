@@ -28,3 +28,7 @@ window.addEventListener("scroll", () => {
     }
   }
 });
+
+document.addEventListener("DOMContentLoaded", function(event) {
+  document.getElementById('updateProductButton').click();
+});
