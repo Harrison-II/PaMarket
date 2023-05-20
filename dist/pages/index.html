@@ -18,23 +18,23 @@
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="pt-2">
-          <img src="../img/logo.svg" alt="" />
+          <img src="../img/PaMarket_logo.png" alt="" height="60px" width="60px" />
         </div>
 
         <!-- Menu Items -->
         <div class="hidden space-x-6 md:flex">
           <!-- Search Bar -->
 
-          <a href="index.html" class= font-semibold transition ease-in-out duration-300 hover:scale-110">Home</a>
-          <a href="library.html" class= font-semibold transition ease-in-out duration-300 hover:scale-110">Services</a>
-          <a href="articles.html" class= font-semibold transition ease-in-out duration-300 hover:scale-110">Articles</a>
-          <a href="subscribe.html" class= font-semibold transition ease-in-out duration-300 hover:scale-110">Contact</a>
+          <a href="index.html" class="font-semibold transition ease-in-out duration-300 hover:scale-110">Home</a>
+          <a href="services.html" class="font-semibold transition ease-in-out duration-300 hover:scale-110">Services</a>
+          <a href="articles.html" class="font-semibold transition ease-in-out duration-300 hover:scale-110">Articles</a>
+          <a href="contact.html" class="font-semibold transition ease-in-out duration-300 hover:scale-110">Contact</a>
 
         </div>
 
         <!-- Button -->
-        <a href="#"
-          class="hidden font-medium p-3 px-6 pt-3 shadow-sm text-white bg-brightRed rounded-full baseline transition ease-in-out duration-300 hover:scale-110 hover:bg-brightRedDark md:block">Subscribe</a>
+        <a href="#" id="subscribe-button" data-modal-target="subscribe-modal" data-modal-toggle="subscribe-modal"
+          class="hidden font-medium p-2 px-6 shadow-sm text-white bg-brightRed rounded-full baseline transition ease-in-out duration-300 hover:scale-110 hover:bg-brightRedDark md:block">Subscribe</a>
 
         <!-- Hamburger Icon -->
         <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
@@ -48,10 +48,17 @@
       <div class="md:hidden">
         <div id="menu"
           class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-          <a href="#" class= font-medium transition ease-in-out duration-300 hover:scale-110">Home</a>
-          <a href="#" class= font-medium transition ease-in-out duration-300 hover:scale-110">Services</a>
-          <a href="#" class= font-medium transition ease-in-out duration-300 hover:scale-110">Articles</a>
-          <a href="#" class= font-medium transition ease-in-out duration-300 hover:scale-110">Contact</a>
+          <a href="index.html"
+            class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Home</a>
+          <a href="services.html"
+            class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Services</a>
+          <a href="articles.html"
+            class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Articles</a>
+          <a href="contact.html"
+            class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Contact</a>
+          <!-- Button -->
+          <a href="#" id="subscribe-button" data-modal-target="subscribe-modal" data-modal-toggle="subscribe-modal"
+            class="font-nunito font-medium p-3 px-6 pt-3 shadow-sm text-white bg-brightRed rounded-full baseline transition ease-in-out duration-300 hover:scale-110 hover:bg-brightRedDark">Subscribe</a>
         </div>
       </div>
     </nav>
@@ -60,7 +67,8 @@
   <!-- Hero Section -->
   <section id="hero">
     <!-- Flex Container -->
-    <div class="container flex flex-col-reverse items-center pt-1 px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+    <div
+      class="container flex flex-col-reverse items-center pt-1 px-6 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
       <!-- Left item -->
       <div class="flex flex-col space-y-12 md:w-1/2">
         <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
@@ -128,7 +136,7 @@
             <h3 class="hidden mb-4 text-lg font-bold md:block">
               Feature number 1
             </h3>
-            <p class= font-medium">
+            <p class=font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugiat dolores quod reprehenderit,
               nisi velit doloribus molestias hic praesentium voluptates similique laboriosam dignissimos! Minus iste,
               beatae amet eveniet neque molestias.
@@ -154,7 +162,7 @@
             <h3 class="hidden mb-4 text-lg font-bold md:block">
               Feature number 2
             </h3>
-            <p class= font-medium">
+            <p class=font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugiat dolores quod reprehenderit,
               nisi velit doloribus molestias hic praesentium voluptates similique laboriosam dignissimos! Minus iste,
               beatae amet eveniet neque molestias.
@@ -180,7 +188,7 @@
             <h3 class="hidden mb-4 text-lg font-bold md:block">
               Feature number 3
             </h3>
-            <p class= font-medium">
+            <p class=font-medium">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque fugiat dolores quod reprehenderit,
               nisi velit doloribus molestias hic praesentium voluptates similique laboriosam dignissimos! Minus iste,
               beatae amet eveniet neque molestias.
@@ -204,13 +212,14 @@
         What's Different Articles Pa Market?
       </h2>
       <!-- Some introductory text -->
-      <p class="text-xl font-medium text-center mt-5">Pa Market brings you a hoard of new and convenient services you are sure to enjoy</p>
+      <p class="text-xl font-medium text-center mt-5">Pa Market brings you a hoard of new and convenient services you
+        are sure to enjoy</p>
       <!-- Testimonials Container -->
       <div class="flex flex-col mt-20 md:flex-row md:space-x-6">
         <!-- Testimonial 1 -->
         <div class="flex flex-col items-center p-6 space-y-6 rounded-lg shadow-lg md:w-1/3">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="#F3603C" class="w-10 h-10">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F3603C"
+            class="w-10 h-10">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
           </svg>
@@ -222,14 +231,14 @@
             beatae amet eveniet neque molestias.
           </p>
           <span>
-            <a href="#" class= font-medium hover:text-green-700 hover:underline">Learn More</a>
+            <a href="#" class=font-medium hover:text-green-700 hover:underline">Learn More</a>
           </span>
         </div>
 
         <!-- Testimonial 2 -->
         <div class="flex flex-col items-center p-6 space-y-6 rounded-lg shadow-lg md:flex md:w-1/3">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="#F3603C" class="w-10 h-10">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F3603C"
+            class="w-10 h-10">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
           </svg>
@@ -241,14 +250,14 @@
             beatae amet eveniet neque molestias.
           </p>
           <span>
-            <a href="#" class= font-medium hover:text-green-700 hover:underline">Learn More</a>
+            <a href="#" class=font-medium hover:text-green-700 hover:underline">Learn More</a>
           </span>
         </div>
 
         <!-- Testimonial 3 -->
         <div class="flex flex-col items-center p-6 space-y-6 rounded-lg shadow-lg md:flex md:w-1/3">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-            stroke="#F3603C" class="w-10 h-10">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F3603C"
+            class="w-10 h-10">
             <path stroke-linecap="round" stroke-linejoin="round"
               d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
           </svg>
@@ -260,7 +269,7 @@
             beatae amet eveniet neque molestias.
           </p>
           <span>
-            <a href="#" class= font-medium hover:text-green-700 hover:underline">Learn More</a>
+            <a href="#" class=font-medium hover:text-green-700 hover:underline">Learn More</a>
           </span>
         </div>
       </div>
@@ -272,13 +281,12 @@
   </div>
 
   <!-- CTA Section -->
-  <section id="cta" class="flex items-center h-full">
+  <section id="cta" class="flex items-center h-5/6"">
     <!-- Flex Container -->
-    <div class="container mx-auto py-16">
-      <div
-      class="px-6 py-24 mx-auto space-y-12 md:pt-12 md:pb-0 md:space-y-0 sm:pb-0">
+    <div class=" container mx-auto py-16">
+    <div class="px-6 py-24 mx-auto space-y-12 md:pt-12 md:pb-0 md:space-y-0 sm:pb-0">
       <!-- Heading -->
-      <h2 class="text-5xl font-bold text-center md:text-4xl md:max-w-xl md:text-left sm:text-white">
+      <h2 id="cta-text" class="text-5xl font-bold text-center md:text-4xl md:max-w-xl md:text-left sm:text-white">
         Simplify how you connect
       </h2>
     </div>
@@ -286,14 +294,69 @@
     <!-- Button -->
     <div
       class="flex justify-center px-6 py-24 mx-auto space-y-10 md:pt-12 md:pb-0 md:flex md:justify-start md:space-y-0 sm:py-4">
-      <a href="subscribe.html"
+      <a href="contact.html"
         class="p-3 px-6 pt-2 font-normal text-white bg-brightRed rounded-full shadow-2xl baseline transition ease-in-out duration-300 hover:scale-110 hover:bg-brightRedDark">Get
         Started</a>
     </div>
     </div>
-    
+
     </div>
   </section>
+
+  <!-- Subscribe modal -->
+  <div id="subscribe-modal" tabindex="-1" aria-hidden="true"
+    class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative w-full max-w-md max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <button type="button"
+          class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+          data-modal-hide="subscribe-modal">
+          <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+              d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <span class="sr-only">Close modal</span>
+        </button>
+        <div class="px-6 py-6 lg:px-8">
+          <h3 class="mb-4 text-xl font-nunito font-bold text-gray-900 dark:text-white">Sign in to Pa Market</h3>
+          <form class="space-y-6" action="#">
+            <div>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                email</label>
+              <input type="email" name="email" id="email"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                placeholder="name@company.com" required>
+            </div>
+            <div>
+              <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                Phone Number</label>
+              <input type="text" name="mobile" id="mobile" placeholder="+260977010203"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                required>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex items-start">
+                <div class="flex items-center h-5">
+                  <input id="promotions" type="checkbox" value=""
+                    class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-brightRed dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-brightRed dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                    required>
+                </div>
+                <label for="promotions" class="ml-2 text-sm font-nunito font-medium text-gray-900 dark:text-gray-300">I
+                  would like to
+                  receive promotional emails</label>
+              </div>
+
+            </div>
+            <button type="submit"
+              class="w-full text-white bg-brightRed hover:bg-brightRed focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-brightRed dark:hover:bg-brightRed focus:outline-none dark:focus:ring-orange-800 block">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-veryDarkBlue" id="footer">
@@ -306,8 +369,8 @@
           Copyright &copy; 2022, All Rights Reserved
         </div>
         <!-- Logo -->
-        <div>
-          <img src="../img/logo-white.svg" class="h-8" alt="" />
+        <div class="mx-auto">
+          <img src="../img/PaMarket_logo.png" class="p-2" alt="" height="130px" width="130px" />
         </div>
         <!-- Social Links Container -->
         <div class="flex justify-center space-x-4">
@@ -317,7 +380,7 @@
           </a>
           <!-- Link 2 -->
           <a href="#">
-            <img src="img/icon-youtube.svg" alt="" class="h-8" />
+            <img src="../img/icon-youtube.svg" alt="" class="h-8" />
           </a>
           <!-- Link 3 -->
           <a href="#">
@@ -325,7 +388,7 @@
           </a>
           <!-- Link 4 -->
           <a href="#">
-            <img src="../img/icon-pnotoest.svg" alt="" class="h-8" />
+            <img src="../img/icon-pinterest.svg" alt="" class="h-8" />
           </a>
           <!-- Link 5 -->
           <a href="#">
@@ -336,17 +399,16 @@
       <!-- List Container -->
       <div class="flex mx-auto p-2 sm:flex-row md:flex-col">
         <a href="index.html" class="text-white p-2">Home</a>
-        <a href="library.html" class="text-white p-2">Services</a>
+        <a href="services.html" class="text-white p-2">Services</a>
         <a href="articles.html" class="text-white p-2">Articles</a>
-        <a href="subscribe.html" class="text-white p-2">Contact</a>
+        <a href="contact.html" class="text-white p-2">Contact</a>
       </div>
 
       <!-- Input Container -->
       <div class="flex flex-col justify-between">
         <form>
           <div class="flex space-x-3">
-            <input type="text" class="flex-1 px-4 rounded-2xl focus:outline-none"
-              placeholder="Search tags..." />
+            <input type="text" class="flex-1 px-4 rounded-2xl focus:outline-none" placeholder="Search tags..." />
             <button
               class="px-6 py-2 text-white rounded-full bg-brightRed transition ease-in-out duration-300 hover:scale-110 hover:bg-brightRedDark focus:outline-none">
               Search
@@ -361,7 +423,7 @@
   </footer>
 
   <script src="../js/script.js"></script>
-  <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
 
 </body>
 

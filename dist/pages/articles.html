@@ -19,25 +19,25 @@
             <div class="flex items-center justify-between">
                 <!-- Logo -->
                 <div class="pt-2">
-                    <img src="../img/logo.svg" alt="" />
+                    <img src="../img/PaMarket_logo.png" alt="" height="60px" width="60px" />
                 </div>
 
                 <!-- Menu Items -->
                 <div class="hidden space-x-6 md:flex">
                     <a href="index.html"
                         class="font-nunito font-semibold transition ease-in-out duration-300 hover:scale-110">Home</a>
-                    <a href="library.html"
+                    <a href="services.html"
                         class="font-nunito font-semibold transition ease-in-out duration-300 hover:scale-110">Services</a>
                     <a href="articles.html"
                         class="font-nunito font-semibold transition ease-in-out duration-300 hover:scale-110">Articles</a>
-                    <a href="subscribe.html"
+                    <a href="contact.html"
                         class="font-nunito font-semibold transition ease-in-out duration-300 hover:scale-110">Contact</a>
 
                 </div>
 
                 <!-- Button -->
-                <a href="#"
-                    class="hidden font-nunito font-medium p-3 px-6 pt-3 shadow-sm text-white bg-brightRed rounded-full baseline transition ease-in-out duration-300 hover:scale-110 hover:bg-brightRedDark md:block">Subscribe</a>
+                <button id="subscribe-button" data-modal-target="subscribe-modal" data-modal-toggle="subscribe-modal"
+                    class="hidden font-nunito font-medium p-3 px-6 pt-3 shadow-sm text-white bg-brightRed rounded-full baseline transition ease-in-out duration-300 hover:scale-110 hover:bg-brightRedDark md:block">Subscribe</button>
 
                 <!-- Hamburger Icon -->
                 <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
@@ -53,12 +53,16 @@
                     class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
                     <a href="index.html"
                         class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Home</a>
-                    <a href="library.html"
+                    <a href="services.html"
                         class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Services</a>
                     <a href="articles.html"
                         class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Articles</a>
-                    <a href="subscribe.html"
+                    <a href="contact.html"
                         class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Contact</a>
+                    <!-- Button -->
+                    <a href="#" id="subscribe-button" data-modal-target="subscribe-modal"
+                        data-modal-toggle="subscribe-modal"
+                        class="font-nunito font-medium p-3 px-6 pt-3 shadow-sm text-white bg-brightRed rounded-full baseline transition ease-in-out duration-300 hover:scale-110 hover:bg-brightRedDark">Subscribe</a>
                 </div>
             </div>
         </nav>
@@ -76,21 +80,21 @@
                     Soluta accusantium reiciendis voluptates rerum nostrum sapiente placeat neque porro..
                 </p>
             </div>
-      
+
             <!-- Numbered List -->
             <div class="flex flex-col space-y-8 md:w-1/2">
                 <div class="">
                     <img src="../img/publish_article.svg" alt="">
                 </div>
             </div>
-          </div>
+        </div>
     </section>
     <!-- Article section -->
     <section id="article-section" class="bg-white dark:bg-gray-900 py-10">
-        <div class= px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-        
+        <div class=px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+
             <div class="container mx-auto grid gap-8 lg:grid-cols-2">
-                <article
+                <article id="package-products"
                     class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div class="flex justify-between items-center mb-5">
                         <span
@@ -103,7 +107,7 @@
                             </svg>
                             Youtube Tutorial
                         </span>
-                        <span class="text-sm">3 days ago</span>
+                        <span class="text-sm">10 May, 2023</span>
                     </div>
                     <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                         <a href="#">How to package of farm products</a>
@@ -114,7 +118,7 @@
                         sapiente? Modi commodi est minus.
                     </p>
                     <div class="flex justify-between items-center">
-                        <a href="#"
+                        <a href="#" data-modal-target="package-modal" data-modal-toggle="package-modal"
                             class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
                             Read more
                             <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
@@ -126,7 +130,7 @@
                         </a>
                     </div>
                 </article>
-                <article
+                <article id="methods"
                     class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div class="flex justify-between items-center mb-5">
                         <span
@@ -140,13 +144,15 @@
                             </svg>
                             Article
                         </span>
-                        <span class="text-sm">14 days ago</span>
+                        <span class="text-sm">14 April, 2023</span>
                     </div>
-                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Our
-                            first project with React</a></h2>
-                    <p class="mb-5 font-light dark:text-gray-400">Static websites are now used to
-                        bootstrap lots of websites and are becoming the basis for a variety of tools that even influence
-                        both web designers and developers influence both web designers and developers.</p>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Newer
+                            farming methods to improve yields</a></h2>
+                    <p class="mb-5 font-light dark:text-gray-400">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                    </p>
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-4">
                             <img class="w-7 h-7 rounded-full"
@@ -156,7 +162,7 @@
                                 Bonnie Green
                             </span>
                         </div>
-                        <a href="#"
+                        <a href="#" data-modal-target="methods-modal" data-modal-toggle="methods-modal"
                             class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
                             Read more
                             <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
@@ -168,7 +174,7 @@
                         </a>
                     </div>
                 </article>
-                <article
+                <article id="package-products-2"
                     class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div class="flex justify-between items-center mb-5">
                         <span
@@ -181,10 +187,10 @@
                             </svg>
                             Youtube Tutorial
                         </span>
-                        <span class="text-sm">3 days ago</span>
+                        <span class="text-sm">11 April, 2023</span>
                     </div>
                     <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                        <a href="#">How to packaging of farm products</a>
+                        <a href="#">How to package of farm products</a>
                     </h2>
                     <p class="mb-5 font-light dark:text-gray-400">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
@@ -192,7 +198,7 @@
                         sapiente? Modi commodi est minus.
                     </p>
                     <div class="flex justify-between items-center">
-                        <a href="#"
+                        <a href="#" data-modal-target="package-modal-2" data-modal-toggle="package-modal-2"
                             class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
                             Read more
                             <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
@@ -204,7 +210,7 @@
                         </a>
                     </div>
                 </article>
-                <article
+                <article id="methods-2"
                     class="p-6 bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
                     <div class="flex justify-between items-center mb-5">
                         <span
@@ -218,13 +224,15 @@
                             </svg>
                             Article
                         </span>
-                        <span class="text-sm">14 days ago</span>
+                        <span class="text-sm">30 March, 2023</span>
                     </div>
-                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Our
-                            first project with React</a></h2>
-                    <p class="mb-5 font-light dark:text-gray-400">Static websites are now used to
-                        bootstrap lots of websites and are becoming the basis for a variety of tools that even influence
-                        both web designers and developers influence both web designers and developers.</p>
+                    <h2 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><a href="#">Newer
+                            farming methods to improve yields</a></h2>
+                    <p class="mb-5 font-light dark:text-gray-400">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                    </p>
                     <div class="flex justify-between items-center">
                         <div class="flex items-center space-x-4">
                             <img class="w-7 h-7 rounded-full"
@@ -234,7 +242,7 @@
                                 Bonnie Green
                             </span>
                         </div>
-                        <a href="#"
+                        <a href="#" data-modal-target="methods-modal-2" data-modal-toggle="methods-modal-2"
                             class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline">
                             Read more
                             <svg class="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20"
@@ -250,73 +258,383 @@
         </div>
     </section>
 
-    <!-- Footer -->
-  <footer class="bg-veryDarkBlue" id="footer">
-    <!-- Flex Container -->
-    <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
-      <!-- Logo and social links container -->
-      <div
-        class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
-        <div class="mx-auto my-6 font-medium text-center text-white md:hidden">
-          Copyright &copy; 2022, All Rights Reserved
+    <!-- Package Products modal -->
+    <div id="package-modal" tabindex="-1" aria-hidden="false"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Newer farming methods to improve yields
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="package-modal">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div
+                    class="flex justify-end items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="package-modal" type="button"
+                        class="text-white bg-red-600 outline-red-600 hover:scale-110 focus:ring-2 focus:outline-none focus:ring-red-300 rounded-lg border border-red-800 text-sm font-nunito font-medium px-5 py-2.5 hover:text-white focus:z-10 dark:bg-grey-700 dark:text-white dark:border-red-500 dark:hover:text-white dark:hover:bg-red-800 dark:focus:ring-red-800">Done</button>
+                </div>
+            </div>
         </div>
-        <!-- Logo -->
-        <div>
-          <img src="../img/logo-white.svg" class="h-8" alt="" />
-        </div>
-        <!-- Social Links Container -->
-        <div class="flex justify-center space-x-4">
-          <!-- Link 1 -->
-          <a href="#">
-            <img src="../img/icon-facebook.svg" alt="" class="h-8" />
-          </a>
-          <!-- Link 2 -->
-          <a href="#">
-            <img src="img/icon-youtube.svg" alt="" class="h-8" />
-          </a>
-          <!-- Link 3 -->
-          <a href="#">
-            <img src="../img/icon-twitter.svg" alt="" class="h-8" />
-          </a>
-          <!-- Link 4 -->
-          <a href="#">
-            <img src="../img/icon-pnotoest.svg" alt="" class="h-8" />
-          </a>
-          <!-- Link 5 -->
-          <a href="#">
-            <img src="../img/icon-instagram.svg" alt="" class="h-8" />
-          </a>
-        </div>
-      </div>
-      <!-- List Container -->
-      <div class="flex mx-auto p-2 sm:flex-row md:flex-col">
-        <a href="index.html" class="text-white p-2">Home</a>
-        <a href="library.html" class="text-white p-2">Services</a>
-        <a href="articles.html" class="text-white p-2">Articles</a>
-        <a href="subscribe.html" class="text-white p-2">Contact</a>
-      </div>
-
-      <!-- Input Container -->
-      <div class="flex flex-col justify-between">
-        <form>
-          <div class="flex space-x-3">
-            <input type="text" class="flex-1 px-4 rounded-2xl focus:outline-none"
-              placeholder="Search tags..." />
-            <button
-              class="px-6 py-2 text-white rounded-full bg-brightRed transition ease-in-out duration-300 hover:scale-110 hover:bg-brightRedDark focus:outline-none">
-              Search
-            </button>
-          </div>
-        </form>
-        <div class="hidden text-white md:block">
-          Copyright &copy; 2023, All Rights Reserved
-        </div>
-      </div>
     </div>
-  </footer>
+
+    <!-- Package Products 2 modal -->
+    <div id="package-modal-2" tabindex="-1" aria-hidden="false"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Newer farming methods to improve yields
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="package-modal-2">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div
+                    class="flex justify-end items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="package-modal-2" type="button"
+                        class="text-white bg-red-600 outline-red-600 hover:scale-110 focus:ring-2 focus:outline-none focus:ring-red-300 rounded-lg border border-red-800 text-sm font-nunito font-medium px-5 py-2.5 hover:text-white focus:z-10 dark:bg-grey-700 dark:text-white dark:border-red-500 dark:hover:text-white dark:hover:bg-red-800 dark:focus:ring-red-800">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Method modal -->
+    <div id="methods-modal" tabindex="-1" aria-hidden="false"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Newer farming methods to improve yields
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="methods-modal">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div
+                    class="flex justify-end items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="methods-modal" type="button"
+                        class="text-white bg-red-600 outline-red-600 hover:scale-110 focus:ring-2 focus:outline-none focus:ring-red-300 rounded-lg border border-red-800 text-sm font-nunito font-medium px-5 py-2.5 hover:text-white focus:z-10 dark:bg-grey-700 dark:text-white dark:border-red-500 dark:hover:text-white dark:hover:bg-red-800 dark:focus:ring-red-800">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Method modal -->
+    <div id="methods-modal-2" tabindex="-1" aria-hidden="false"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <!-- Modal header -->
+                <div class="flex items-start justify-between p-4 border-b rounded-t dark:border-gray-600">
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                        Newer farming methods to improve yields
+                    </h3>
+                    <button type="button"
+                        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                        data-modal-hide="methods-modal-2">
+                        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="p-6 space-y-6">
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                    </p>
+                    <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, aut. Incidunt unde provident
+                        quibusdam assumenda, saepe ullam neque modi expedita eligendi blanditiis eius fugit repellat
+                        sapiente? Modi commodi est minus.
+                    </p>
+                </div>
+                <!-- Modal footer -->
+                <div
+                    class="flex justify-end items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="methods-modal-2" type="button"
+                        class="text-white bg-red-600 outline-red-600 hover:scale-110 focus:ring-2 focus:outline-none focus:ring-red-300 rounded-lg border border-red-800 text-sm font-nunito font-medium px-5 py-2.5 hover:text-white focus:z-10 dark:bg-grey-700 dark:text-white dark:border-red-500 dark:hover:text-white dark:hover:bg-red-800 dark:focus:ring-red-800">Done</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscribe modal -->
+    <div id="subscribe-modal" tabindex="-1" aria-hidden="true"
+        class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative w-full max-w-md max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <button type="button"
+                    class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+                    data-modal-hide="subscribe-modal">
+                    <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                            clip-rule="evenodd"></path>
+                    </svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+                <div class="px-6 py-6 lg:px-8">
+                    <h3 class="mb-4 text-xl font-nunito font-bold text-gray-900 dark:text-white">Sign in to Pa Market
+                    </h3>
+                    <form class="space-y-6" action="#">
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                email</label>
+                            <input type="email" name="email" id="email"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                placeholder="name@company.com" required>
+                        </div>
+                        <div>
+                            <label for="password"
+                                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                Phone Number</label>
+                            <input type="text" name="mobile" id="mobile" placeholder="+260977010203"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                required>
+                        </div>
+                        <div class="flex justify-between">
+                            <div class="flex items-start">
+                                <div class="flex items-center h-5">
+                                    <input id="promotions" type="checkbox" value=""
+                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-brightRed dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-brightRed dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
+                                        required>
+                                </div>
+                                <label for="promotions"
+                                    class="ml-2 text-sm font-nunito font-medium text-gray-900 dark:text-gray-300">I
+                                    would like to
+                                    receive promotional emails</label>
+                            </div>
+
+                        </div>
+                        <button type="submit"
+                            class="w-full text-white bg-brightRed hover:bg-brightRed focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-brightRed dark:hover:bg-brightRed focus:outline-none dark:focus:ring-orange-800 block">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-veryDarkBlue" id="footer">
+        <!-- Flex Container -->
+        <div
+            class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <!-- Logo and social links container -->
+            <div
+                class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+                <div class="mx-auto my-6 font-medium text-center text-white md:hidden">
+                    Copyright &copy; 2023, All Rights Reserved
+                </div>
+                <!-- Logo -->
+                <div class="mx-auto">
+                    <img src="../img/PaMarket_logo.png" class="p-2" alt="" height="130px" width="130px" />
+                </div>
+                <!-- Social Links Container -->
+                <div class="flex justify-center space-x-4">
+                    <!-- Link 1 -->
+                    <a href="#">
+                        <img src="../img/icon-facebook.svg" alt="" class="h-8" />
+                    </a>
+                    <!-- Link 2 -->
+                    <a href="#">
+                        <img src="../img/icon-youtube.svg" alt="" class="h-8" />
+                    </a>
+                    <!-- Link 3 -->
+                    <a href="#">
+                        <img src="../img/icon-twitter.svg" alt="" class="h-8" />
+                    </a>
+                    <!-- Link 4 -->
+                    <a href="#">
+                        <img src="../img/icon-pinterest.svg" alt="" class="h-8" />
+                    </a>
+                    <!-- Link 5 -->
+                    <a href="#">
+                        <img src="../img/icon-instagram.svg" alt="" class="h-8" />
+                    </a>
+                </div>
+            </div>
+            <!-- List Container -->
+            <div class="flex mx-auto p-2 sm:flex-row md:flex-col">
+                <a href="index.html" class="text-white p-2">Home</a>
+                <a href="services.html" class="text-white p-2">Services</a>
+                <a href="articles.html" class="text-white p-2">Articles</a>
+                <a href="contact.html" class="text-white p-2">Contact</a>
+            </div>
+
+            <!-- Input Container -->
+            <div class="flex flex-col justify-between">
+                <form>
+                    <div class="flex space-x-3">
+                        <input type="text" class="flex-1 px-4 rounded-2xl focus:outline-none"
+                            placeholder="Search tags..." />
+                        <button
+                            class="px-6 py-2 text-white rounded-full bg-brightRed transition ease-in-out duration-300 hover:scale-110 hover:bg-brightRedDark focus:outline-none">
+                            Search
+                        </button>
+                    </div>
+                </form>
+                <div class="hidden text-white md:block">
+                    Copyright &copy; 2023, All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="../js/script.js"></script>
-    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
 
 </body>
 

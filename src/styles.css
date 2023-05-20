@@ -14,13 +14,6 @@
   font-weight: normal;
 }
 
-/* #hero {
-  background-image: url('../img/market-min.png');
-  background-repeat: no-repeat;
-  background-size: 650px;
-  background-position: 87% ;
-} */
-
 #cta {
   height: 100%;
   background-image: url('../img/farmer_on_phone.jpg');
@@ -29,14 +22,50 @@
   background-repeat: no-repeat;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 596px) {
   body {
     background-position: 50px -50px;
     background-size: 500px;
   }
 
   #cta {
-    background-image: url('../img/bg-simplify-section-mobile.svg');
+    background-image: url('../img/bg-tablet-pattern.svg');
+    background-repeat: repeat;
+    background-size: 80px;
+    background-position: 87%;
+  }
+
+  #cta div {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  #cta div div {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  #cta-text {
+    color: #000;
+  }
+}
+
+@media (min-width: 678px) {
+  body {
+    background-position: 50px -50px;
+    background-size: 500px;
+  }
+
+  #cta {
+    height: 75vh;
+    background-image: url('../img/farmer_on_phone.jpg');
+    background-size: 100vw;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+
+  #cta-text {
+    color: #ffffff;
   }
 }
 
@@ -95,4 +124,8 @@
 .blur-backdrop-filter {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+}
+
+#promotions:checked {
+  background-color: hsl(12, 88%, 59%);
 }
