@@ -5,9 +5,9 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="./css/main.css" />
   <title>Pa Market</title>
-  <link rel="stylesheet" href="../fonts/rubik/Rubik-Bold.ttf">
+  <link rel="stylesheet" href="./fonts/rubik/Rubik-Bold.ttf">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
       <div class="flex items-center justify-between">
         <!-- Logo -->
         <div class="pt-2">
-          <img src="../img/PaMarket_logo.png" alt="" height="60px" width="60px" />
+          <img src="./img/PaMarket_logo.png" alt="" height="60px" width="60px" />
         </div>
 
         <!-- Menu Items -->
@@ -26,9 +26,12 @@
           <!-- Search Bar -->
 
           <a href="index.html" class="font-semibold transition ease-in-out duration-300 hover:scale-110">Home</a>
-          <a href="services.html" class="font-semibold transition ease-in-out duration-300 hover:scale-110">Services</a>
-          <a href="articles.html" class="font-semibold transition ease-in-out duration-300 hover:scale-110">Articles</a>
-          <a href="contact.html" class="font-semibold transition ease-in-out duration-300 hover:scale-110">Contact</a>
+          <a href="./pages/services.html"
+            class="font-semibold transition ease-in-out duration-300 hover:scale-110">Services</a>
+          <a href="./pages/articles.html"
+            class="font-semibold transition ease-in-out duration-300 hover:scale-110">Articles</a>
+          <a href="./pages/contact.html"
+            class="font-semibold transition ease-in-out duration-300 hover:scale-110">Contact</a>
 
         </div>
 
@@ -50,11 +53,11 @@
           class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
           <a href="index.html"
             class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Home</a>
-          <a href="services.html"
+          <a href="./pages/services.html"
             class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Services</a>
-          <a href="articles.html"
+          <a href="./pages/articles.html"
             class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Articles</a>
-          <a href="contact.html"
+          <a href="./pages/contact.html"
             class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Contact</a>
           <!-- Button -->
           <a href="#" id="subscribe-button" data-modal-target="subscribe-modal" data-modal-toggle="subscribe-modal"
@@ -88,7 +91,7 @@
       </div>
       <!-- Image -->
       <div class="flex flex-col items-center md:w-1/2">
-        <img src="../img/market-min.png" alt="" />
+        <img src="./img/market-min.png" alt="" />
       </div>
     </div>
   </section>
@@ -112,7 +115,7 @@
           beatae amet eveniet neque molestias.
         </p>
         <div>
-          <img src="../img/marketplace2.svg" alt="" height="600px" width="400px">
+          <img src="./img/marketplace2.svg" alt="" height="600px" width="400px">
         </div>
       </div>
 
@@ -294,7 +297,7 @@
     <!-- Button -->
     <div
       class="flex justify-center px-6 py-24 mx-auto space-y-10 md:pt-12 md:pb-0 md:flex md:justify-start md:space-y-0 sm:py-4">
-      <a href="contact.html"
+      <a href="./pages/contact.html"
         class="p-3 px-6 pt-2 font-normal text-white bg-brightRed rounded-full shadow-2xl baseline transition ease-in-out duration-300 hover:scale-110 hover:bg-brightRedDark">Get
         Started</a>
     </div>
@@ -321,14 +324,22 @@
           <span class="sr-only">Close modal</span>
         </button>
         <div class="px-6 py-6 lg:px-8">
-          <h3 class="mb-4 text-xl font-nunito font-bold text-gray-900 dark:text-white">Sign in to Pa Market</h3>
-          <form class="space-y-6" action="#">
+          <h3 class="mb-4 text-xl font-nunito font-bold text-gray-900 dark:text-white">Subscribe Pa Market
+          </h3>
+          <form class="space-y-6" method="POST" action="#">
             <div>
               <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                email</label>
+                Name</label>
+              <input type="text" name="name" id="name"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                placeholder="John Mwila" required>
+            </div>
+            <div>
+              <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                Email</label>
               <input type="email" name="email" id="email"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                placeholder="name@company.com" required>
+                placeholder="name@email.com" required>
             </div>
             <div>
               <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
@@ -337,21 +348,9 @@
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                 required>
             </div>
-            <div class="flex justify-between">
-              <div class="flex items-start">
-                <div class="flex items-center h-5">
-                  <input id="promotions" type="checkbox" value=""
-                    class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-brightRed dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-brightRed dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-                    required>
-                </div>
-                <label for="promotions" class="ml-2 text-sm font-nunito font-medium text-gray-900 dark:text-gray-300">I
-                  would like to
-                  receive promotional emails</label>
-              </div>
-
-            </div>
-            <button type="submit"
-              class="w-full text-white bg-brightRed hover:bg-brightRed focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-brightRed dark:hover:bg-brightRed focus:outline-none dark:focus:ring-orange-800 block">Subscribe</button>
+            <button type="button"
+              class="w-full text-white bg-brightRed hover:bg-brightRed focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-brightRed dark:hover:bg-brightRed focus:outline-none dark:focus:ring-orange-800 block"
+              onclick="sendSubscribeMail()">Subscribe</button>
           </form>
         </div>
       </div>
@@ -361,69 +360,72 @@
   <!-- Footer -->
   <footer class="bg-veryDarkBlue" id="footer">
     <!-- Flex Container -->
-    <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
-      <!-- Logo and social links container -->
-      <div
-        class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
-        <div class="mx-auto my-6 font-medium text-center text-white md:hidden">
-          Copyright &copy; 2022, All Rights Reserved
+    <div
+        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+        <!-- Logo and social links container -->
+        <div
+            class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+            <div class="mx-auto my-6 font-medium text-center text-white md:hidden">
+                Copyright &copy; 2022, All Rights Reserved
+            </div>
+            <!-- Logo -->
+            <div class="mx-auto">
+                <img src="./img/PaMarket_logo.png" class="p-2" alt="" height="130px" width="130px" />
+            </div>
+            <!-- Social Links Container -->
+            <div class="flex justify-center space-x-4">
+                <!-- Link 1 -->
+                <a href="#">
+                    <img src="./img/icon-facebook.svg" alt="" class="h-8" />
+                </a>
+                <!-- Link 2 -->
+                <a href="#">
+                    <img src="./img/icon-youtube.svg" alt="" class="h-8" />
+                </a>
+                <!-- Link 3 -->
+                <a href="#">
+                    <img src="./img/icon-twitter.svg" alt="" class="h-8" />
+                </a>
+                <!-- Link 4 -->
+                <a href="#">
+                    <img src="./img/icon-pinterest.svg" alt="" class="h-8" />
+                </a>
+                <!-- Link 5 -->
+                <a href="#">
+                    <img src="./img/icon-instagram.svg" alt="" class="h-8" />
+                </a>
+            </div>
         </div>
-        <!-- Logo -->
-        <div class="mx-auto">
-          <img src="../img/PaMarket_logo.png" class="p-2" alt="" height="130px" width="130px" />
+        <!-- List Container -->
+        <div class="flex mx-auto p-2 sm:flex-row md:flex-col">
+            <a href="../index.html" class="text-white p-2 hover:text-brightRed">Home</a>
+            <a href="services.html" class="text-white p-2 hover:text-brightRed">Services</a>
+            <a href="articles.html" class="text-white p-2 hover:text-brightRed">Articles</a>
+            <a href="contact.html" class="text-white p-2 hover:text-brightRed">Contact</a>
         </div>
-        <!-- Social Links Container -->
-        <div class="flex justify-center space-x-4">
-          <!-- Link 1 -->
-          <a href="#">
-            <img src="../img/icon-facebook.svg" alt="" class="h-8" />
-          </a>
-          <!-- Link 2 -->
-          <a href="#">
-            <img src="../img/icon-youtube.svg" alt="" class="h-8" />
-          </a>
-          <!-- Link 3 -->
-          <a href="#">
-            <img src="../img/icon-twitter.svg" alt="" class="h-8" />
-          </a>
-          <!-- Link 4 -->
-          <a href="#">
-            <img src="../img/icon-pinterest.svg" alt="" class="h-8" />
-          </a>
-          <!-- Link 5 -->
-          <a href="#">
-            <img src="../img/icon-instagram.svg" alt="" class="h-8" />
-          </a>
-        </div>
-      </div>
-      <!-- List Container -->
-      <div class="flex mx-auto p-2 sm:flex-row md:flex-col">
-        <a href="index.html" class="text-white p-2">Home</a>
-        <a href="services.html" class="text-white p-2">Services</a>
-        <a href="articles.html" class="text-white p-2">Articles</a>
-        <a href="contact.html" class="text-white p-2">Contact</a>
-      </div>
 
-      <!-- Input Container -->
-      <div class="flex flex-col justify-between">
-        <form>
-          <div class="flex space-x-3">
-            <input type="text" class="flex-1 px-4 rounded-2xl focus:outline-none" placeholder="Search tags..." />
-            <button
-              class="px-6 py-2 text-white rounded-full bg-brightRed transition ease-in-out duration-300 hover:scale-110 hover:bg-brightRedDark focus:outline-none">
-              Search
-            </button>
-          </div>
-        </form>
-        <div class="hidden text-white md:block">
-          Copyright &copy; 2023, All Rights Reserved
+        <!-- Info Container -->
+        <div class="flex mx-auto p-2 sm:flex-row md:flex-col">
+
+            <h6 class="text-lg text-white p-2">Contacts: </h6>
+            <p class="text-white p-2">Phone: +260972847972</p>
+            <p class="text-white p-2">Email: pamarket@gmail.com</p>
+            <div class="hidden text-white p-2 md:block">
+                Copyright &copy; 2023, All Rights Reserved
+            </div>
         </div>
-      </div>
     </div>
-  </footer>
+</footer>
 
-  <script src="../js/script.js"></script>
-  <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("8NeOJlhtXZDic1jZE");
+    })();
+  </script>
+
+  <script src="./js/script.js"></script>
 
 </body>
 

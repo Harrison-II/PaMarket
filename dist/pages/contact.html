@@ -24,7 +24,7 @@
 
                 <!-- Menu Items -->
                 <div class="hidden space-x-6 md:flex">
-                    <a href="index.html"
+                    <a href="../index.html"
                         class="font-nunito font-semibold transition ease-in-out duration-300 hover:scale-110">Home</a>
                     <a href="services.html"
                         class="font-nunito font-semibold transition ease-in-out duration-300 hover:scale-110">Services</a>
@@ -52,7 +52,7 @@
             <div class="md:hidden">
                 <div id="menu"
                     class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                    <a href="index.html"
+                    <a href="../index.html"
                         class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Home</a>
                     <a href="services.html"
                         class="font-nunito font-medium transition ease-in-out duration-300 hover:scale-110">Services</a>
@@ -87,7 +87,7 @@
             <!-- What's Different -->
             <div class="md:w-1/2 md:pl-10">
                 <h4 class="text-center font-nunito font-bold text-2xl mx-auto sm:py-5 md:py-2">Email Us</h4>
-                <form action="#" class="w-80 mx-auto" onsubmit="sendEmail(); return false;">
+                <form action="#" class="w-80 mx-auto">
                     <div class="mb-4">
                         <label for="email"
                             class="block mb-2 text-sm font-nunito font-medium text-gray-900 dark:text-white">Your
@@ -111,8 +111,9 @@
                             class="font-nunito font-medium block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-brightRed focus:border-orange-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-brightRed dark:focus:border-orange-500"
                             placeholder="Your message..."></textarea>
                     </div>
-                    <button type="submit"
-                        class="text-white bg-brightRed hover:bg-brightRed w-full focus:ring-4 focus:ring-brightRed font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-brightRed dark:hover:bg-brightRed focus:outline-none dark:focus:ring-brightRed block">Send
+                    <button type="button"
+                        class="text-white bg-brightRed hover:bg-brightRed w-full focus:ring-4 focus:ring-brightRed font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-brightRed dark:hover:bg-brightRed focus:outline-none dark:focus:ring-brightRed block"
+                        onclick="sendContactMail()">Send
                         message</button>
                 </form>
             </div>
@@ -141,15 +142,22 @@
                     <span class="sr-only">Close modal</span>
                 </button>
                 <div class="px-6 py-6 lg:px-8">
-                    <h3 class="mb-4 text-xl font-nunito font-bold text-gray-900 dark:text-white">Sign in to Pa Market
+                    <h3 class="mb-4 text-xl font-nunito font-bold text-gray-900 dark:text-white">Subscribe Pa Market
                     </h3>
-                    <form class="space-y-6" action="#">
+                    <form class="space-y-6" method="POST" action="#">
                         <div>
                             <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                                email</label>
+                                Name</label>
+                            <input type="text" name="name" id="name"
+                                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                placeholder="John Mwila" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                Email</label>
                             <input type="email" name="email" id="email"
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                                placeholder="name@company.com" required>
+                                placeholder="name@email.com" required>
                         </div>
                         <div>
                             <label for="password"
@@ -159,22 +167,9 @@
                                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                 required>
                         </div>
-                        <div class="flex justify-between">
-                            <div class="flex items-start">
-                                <div class="flex items-center h-5">
-                                    <input id="promotions" type="checkbox" value=""
-                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-brightRed dark:bg-gray-600 dark:border-gray-500 dark:focus:ring-brightRed dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-                                        required>
-                                </div>
-                                <label for="promotions"
-                                    class="ml-2 text-sm font-nunito font-medium text-gray-900 dark:text-gray-300">I
-                                    would like to
-                                    receive promotional emails</label>
-                            </div>
-
-                        </div>
-                        <button type="submit"
-                            class="w-full text-white bg-brightRed hover:bg-brightRed focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-brightRed dark:hover:bg-brightRed focus:outline-none dark:focus:ring-orange-800 block">Subscribe</button>
+                        <button type="button"
+                            class="w-full text-white bg-brightRed hover:bg-brightRed focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-brightRed dark:hover:bg-brightRed focus:outline-none dark:focus:ring-orange-800 block"
+                            onclick="sendSubscribeMail()">Subscribe</button>
                     </form>
                 </div>
             </div>
@@ -222,49 +217,33 @@
             </div>
             <!-- List Container -->
             <div class="flex mx-auto p-2 sm:flex-row md:flex-col">
-                <a href="index.html" class="text-white p-2">Home</a>
-                <a href="services.html" class="text-white p-2">Services</a>
-                <a href="articles.html" class="text-white p-2">Articles</a>
-                <a href="contact.html" class="text-white p-2">Contact</a>
+                <a href="../index.html" class="text-white p-2 hover:text-brightRed">Home</a>
+                <a href="services.html" class="text-white p-2 hover:text-brightRed">Services</a>
+                <a href="articles.html" class="text-white p-2 hover:text-brightRed">Articles</a>
+                <a href="contact.html" class="text-white p-2 hover:text-brightRed">Contact</a>
             </div>
 
-            <!-- Input Container -->
-            <div class="flex flex-col justify-between">
-                <form>
-                    <div class="flex space-x-3">
-                        <input type="text" class="flex-1 px-4 rounded-2xl focus:outline-none"
-                            placeholder="Search tags..." />
-                        <button
-                            class="px-6 py-2 text-white rounded-full bg-brightRed transition ease-in-out duration-300 hover:scale-110 hover:bg-brightRedDark focus:outline-none">
-                            Search
-                        </button>
-                    </div>
-                </form>
-                <div class="hidden text-white md:block">
+            <!-- Info Container -->
+            <div class="flex mx-auto p-2 sm:flex-row md:flex-col">
+
+                <h6 class="text-lg text-white p-2">Contacts: </h6>
+                <p class="text-white p-2">Phone: +260972847972</p>
+                <p class="text-white p-2">Email: pamarket@gmail.com</p>
+                <div class="hidden text-white p-2 md:block">
                     Copyright &copy; 2023, All Rights Reserved
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="../js/script.js"></script>
     <script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
-    <script>
-        function sendEmail() {
-            var subject = document.getElementById('subject').value;
-            var email = document.getElementById('email').value;
-            var message = document.getElementById('message').value;
-
-            var subject = "Contact Form Submission";
-            var body = "Name: " + subject + "\nEmail: " + email + "\n\nMessage:\n" + message;
-
-            var mailtoLink = "mailto:tamanielliot@gmail.com" +
-                "?subject=" + encodeURIComponent(subject) +
-                "&body=" + encodeURIComponent(body);
-
-            window.open(mailtoLink);
-        }
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("8NeOJlhtXZDic1jZE");
+        })();
     </script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
