@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="./css/main.css" />
   <title>Pa Market</title>
   <link rel="stylesheet" href="./fonts/rubik/Rubik-Bold.ttf">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css" />
+
 </head>
 
 <body>
@@ -360,64 +363,73 @@
   <!-- Footer -->
   <footer class="bg-veryDarkBlue" id="footer">
     <!-- Flex Container -->
-    <div
-        class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
-        <!-- Logo and social links container -->
-        <div
-            class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
-            <div class="mx-auto my-6 font-medium text-center text-white md:hidden">
-                Copyright &copy; 2022, All Rights Reserved
-            </div>
-            <!-- Logo -->
-            <div class="mx-auto">
-                <img src="./img/PaMarket_logo.png" class="p-2" alt="" height="130px" width="130px" />
-            </div>
-            <!-- Social Links Container -->
-            <div class="flex justify-center space-x-4">
-                <!-- Link 1 -->
-                <a href="#">
-                    <img src="./img/icon-facebook.svg" alt="" class="h-8" />
-                </a>
-                <!-- Link 2 -->
-                <a href="#">
-                    <img src="./img/icon-youtube.svg" alt="" class="h-8" />
-                </a>
-                <!-- Link 3 -->
-                <a href="#">
-                    <img src="./img/icon-twitter.svg" alt="" class="h-8" />
-                </a>
-                <!-- Link 4 -->
-                <a href="#">
-                    <img src="./img/icon-pinterest.svg" alt="" class="h-8" />
-                </a>
-                <!-- Link 5 -->
-                <a href="#">
-                    <img src="./img/icon-instagram.svg" alt="" class="h-8" />
-                </a>
-            </div>
+    <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+      <!-- Logo and social links container -->
+      <div
+        class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+        <div class="mx-auto my-6 font-medium text-center text-white md:hidden">
+          Copyright &copy; 2022, All Rights Reserved
         </div>
-        <!-- List Container -->
-        <div class="flex mx-auto p-2 sm:flex-row md:flex-col">
-            <a href="../index.html" class="text-white p-2 hover:text-brightRed">Home</a>
-            <a href="services.html" class="text-white p-2 hover:text-brightRed">Services</a>
-            <a href="articles.html" class="text-white p-2 hover:text-brightRed">Articles</a>
-            <a href="contact.html" class="text-white p-2 hover:text-brightRed">Contact</a>
+        <!-- Logo -->
+        <div class="mx-auto">
+          <img src="./img/PaMarket_logo.png" class="p-2" alt="" height="130px" width="130px" />
         </div>
+        <!-- Social Links Container -->
+        <div class="flex justify-center space-x-4">
+          <!-- Link 1 -->
+          <a href="#">
+            <img src="./img/icon-facebook.svg" alt="" class="h-8" />
+          </a>
+          <!-- Link 2 -->
+          <a href="#">
+            <img src="./img/icon-youtube.svg" alt="" class="h-8" />
+          </a>
+          <!-- Link 3 -->
+          <a href="#">
+            <img src="./img/icon-twitter.svg" alt="" class="h-8" />
+          </a>
+          <!-- Link 4 -->
+          <a href="#">
+            <img src="./img/icon-pinterest.svg" alt="" class="h-8" />
+          </a>
+          <!-- Link 5 -->
+          <a href="#">
+            <img src="./img/icon-instagram.svg" alt="" class="h-8" />
+          </a>
+        </div>
+      </div>
+      <!-- List Container -->
+      <div class="flex mx-auto p-2 sm:flex-row md:flex-col">
+        <a href="../index.html" class="text-white p-2 hover:text-brightRed">Home</a>
+        <a href="services.html" class="text-white p-2 hover:text-brightRed">Services</a>
+        <a href="articles.html" class="text-white p-2 hover:text-brightRed">Articles</a>
+        <a href="contact.html" class="text-white p-2 hover:text-brightRed">Contact</a>
+      </div>
 
-        <!-- Info Container -->
-        <div class="flex mx-auto p-2 sm:flex-row md:flex-col">
-
-            <h6 class="text-lg text-white p-2">Contacts: </h6>
-            <p class="text-white p-2">Phone: +260972847972</p>
-            <p class="text-white p-2">Email: pamarket@gmail.com</p>
-            <div class="hidden text-white p-2 md:block">
-                Copyright &copy; 2023, All Rights Reserved
-            </div>
+      <!-- Info Container -->
+      <div class="flex mx-auto p-2 sm:flex-row md:flex-col">
+        <div class="container mx-auto pb-4">
+          <h6 class="font-nunito font-medium text-white p-2">
+            Contacts
+          </h6>
+          <div class="flex flex-col p-2 sm:flex-row">
+            <span class="text-white">Phone:</span>
+            <span class="text-white">+260972847972</span>
+          </div>
+          <div class="flex flex-col p-2 sm:flex-row">
+            <span class="text-white">Email:</span>
+            <span class="text-white">pamarket@gmail.com</span>
+          </div>
         </div>
+        <div class="hidden text-white p-2 md:block">
+          Copyright &copy; 2023, All Rights Reserved
+        </div>
+      </div>
     </div>
-</footer>
+  </footer>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
-  <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
