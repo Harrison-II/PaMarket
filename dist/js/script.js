@@ -44,9 +44,25 @@ function sendContactMail() {
       document.getElementById("email").value = "";
       document.getElementById("subject").value = "";
       document.getElementById("message").value = "";
-      location.reload()
+      Swal.fire({
+        title: 'Success!',
+        text: 'Successfully sent email',
+        icon: 'success',
+        confirmButtonText: 'Done'
+      })
     })
-    .catch(err => console.log(err));
+    .catch(err => 
+      Swal.fire({
+        title: 'Error!',
+        text: 'Failed to send email.',
+        icon: 'error',
+        confirmButtonText: 'Ok'
+      }).then((err) => {
+        if (!err.isConfirmed) {
+          location.reload()
+        }
+      })
+      );
 
 }
 
@@ -65,8 +81,30 @@ function sendSubscribeMail() {
       document.getElementById("name").value = "";
       document.getElementById("email").value = "";
       document.getElementById("mobile").value = "";
-      location.reload()
+      Swal.fire({
+        title: 'Success!',
+        text: 'Successfully sent subscription request.',
+        icon: 'success',
+        confirmButtonText: 'Done',
+        customClass: {
+          confirmButton: 'bg-brightRed'
+        }
+      }).then((res) => {
+        if (res.isConfirmed) {
+          location.reload()
+        }
+      })
     })
-    .catch(err => console.log(err));
+    .catch(err => Swal.fire({
+      title: 'Error!',
+      text: 'Failed to send subscription request.',
+      icon: 'error',
+      confirmButtonText: 'Ok'
+    }).then((err) => {
+      if (!err.isConfirmed) {
+        location.reload()
+      }
+    })
+    );
 
 }
