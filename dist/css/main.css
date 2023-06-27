@@ -2589,6 +2589,10 @@ input:checked + .toggle-bg {
     padding-bottom: 0px;
   }
 
+  .sm\:text-center {
+    text-align: center;
+  }
+
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -2703,6 +2707,10 @@ input:checked + .toggle-bg {
 
   .md\:text-left {
     text-align: left;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 
   .md\:text-4xl {
