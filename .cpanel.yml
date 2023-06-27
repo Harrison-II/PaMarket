@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/pama13085183/public_html/
+    - export DEPLOYPATH=/home/pama13085183/public_html/PaMarket/dist
     - /bin/cp -R dist $DEPLOYPATHz
