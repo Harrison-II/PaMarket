@@ -1110,6 +1110,16 @@ input:checked + .toggle-bg {
   margin-bottom: 1.5rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
 .-mr-1 {
   margin-right: -0.25rem;
 }
@@ -1132,6 +1142,10 @@ input:checked + .toggle-bg {
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .ml-2 {
@@ -1374,10 +1388,6 @@ input:checked + .toggle-bg {
 
 .resize {
   resize: both;
-}
-
-.list-disc {
-  list-style-type: disc;
 }
 
 .grid-cols-2 {
@@ -1852,10 +1862,6 @@ input:checked + .toggle-bg {
   padding-bottom: 1rem;
 }
 
-.pl-5 {
-  padding-left: 1.25rem;
-}
-
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -1866,6 +1872,14 @@ input:checked + .toggle-bg {
 
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .text-left {
@@ -2014,10 +2028,6 @@ input:checked + .toggle-bg {
 
 .opacity-100 {
   opacity: 1;
-}
-
-.opacity-50 {
-  opacity: 0.5;
 }
 
 .shadow {
@@ -2575,6 +2585,11 @@ input:checked + .toggle-bg {
     padding: 2rem;
   }
 
+  .sm\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
   .sm\:py-4 {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -2587,10 +2602,6 @@ input:checked + .toggle-bg {
 
   .sm\:pb-0 {
     padding-bottom: 0px;
-  }
-
-  .sm\:text-center {
-    text-align: center;
   }
 
   .sm\:text-xl {
@@ -2621,6 +2632,10 @@ input:checked + .toggle-bg {
     display: flex;
   }
 
+  .md\:grid {
+    display: grid;
+  }
+
   .md\:hidden {
     display: none;
   }
@@ -2637,6 +2652,10 @@ input:checked + .toggle-bg {
     max-width: 36rem;
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -2651,6 +2670,10 @@ input:checked + .toggle-bg {
 
   .md\:justify-start {
     justify-content: flex-start;
+  }
+
+  .md\:gap-12 {
+    gap: 3rem;
   }
 
   .md\:space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -2709,10 +2732,6 @@ input:checked + .toggle-bg {
     text-align: left;
   }
 
-  .md\:text-center {
-    text-align: center;
-  }
-
   .md\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
@@ -2725,6 +2744,10 @@ input:checked + .toggle-bg {
 }
 
 @media (min-width: 976px) {
+  .lg\:mb-16 {
+    margin-bottom: 4rem;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
